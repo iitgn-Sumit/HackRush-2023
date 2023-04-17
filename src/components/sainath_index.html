@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IITGN | Sainath Canteen</title>
+    <style>
+      /* CSS for the vertical bar */
+body{
+    background-color: rgb(181, 212, 237);
+}
+
+      .vertical-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        border-left: 10px solid #007bff;
+      }
+
+      .header {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .para {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+      .black-button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        /* justify-content: center;
+        align-items: center; */
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 auto;
+        /* text-align: center; */
+      }
+
+      #box{
+        /* border: 3px solid black; */
+        box-shadow: 0px 0px 15px 0px #007bff;
+      }
+
+      /* Media Queries */
+      @media  (max-width: 400px) {
+        .vertical-bar {
+          flex-direction: column;
+          border-left: none;
+          border-top: 10px solid #007bff;
+        }
+        .vertical-bar:last-child {
+          border-bottom: 10px solid #007bff;
+        }
+        .black-button {
+          margin: 20px auto;
+        }
+        #phone{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction:row;
+        }
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        .vertical-bar {
+          margin: 20px 10px;
+          padding: 10px;
+          border-left: 10px solid #007bff;
+        }
+        .black-button {
+          margin: 20px 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="phone" style="display:flex;justify-content: space-between;">
+    <div style="height:600px;width:300px;display:inline;float:left">
+    <div class="vertical-bar">
+      <div>
+        <h2 class="header">Already Prepared</h2>
+        <p class="para">101,102</p>
+      </div>
+    </div>
+
+    <div class="vertical-bar">
+      <div>
+        <h2 class="header">Being Prepared</h2>
+        <p class="para">103,104</p>
+      </div>
+    </div>
+
+    <div class="vertical-bar">
+      <div>
+        <h2 class="header">In Que</h2>
+        <p class="para">105,106</p>
+      </div>
+    </div>
+</div>
+<div id="box" style="height:600px;width:600px;display:inline;float:right;margin:50px;background-color: rgb(234, 235, 181);border-radius: 30px;">
+    <div style="text-align: center;height: 42px;font-size: 40px;color: white;background-color: rgb(14, 13, 13);border-radius: 30px 30px 0px 0px;">SAINATH CANTEEN</div>
+    <div style="text-align: center;">Current Orders: XXX XXX XXX</div>
+    <button class="black-button">Prepared</button>
+</div>
+</div>
+
+  </body>
+</html>
